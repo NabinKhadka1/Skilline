@@ -55,6 +55,12 @@ header {
   padding: 1.25rem 0.625rem;
 }
 #brands,
-#service {
+#service,
+#skilline {
   padding: 3.125rem 0.625rem;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }

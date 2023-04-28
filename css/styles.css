@@ -94,11 +94,7 @@
   flex-wrap: wrap;
   gap: 1.25rem;
 }
-#service {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
+
 .cards {
   display: flex;
   padding-top: 5rem;
@@ -126,6 +122,52 @@
   top: -3.125rem;
   left: 50%;
   transform: translateX(-50%);
+}
+.skilline__cards {
+  display: flex;
+  row-gap: 2rem;
+  column-gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+}
+.card1,
+.card2 {
+  max-width: 600px;
+  max-height: 400px;
+  position: relative;
+}
+.card1 > img,
+.card2 > img {
+  width: 100%;
+  height: 100%;
+}
+.skilline__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skilline__content > h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--clr-primary-white);
+}
+.card1 > .skilline__content > .btn {
+  background: rgba(23, 27, 65, 0.5);
+}
+.card2 > .skilline__content > .btn {
+  background: rgba(35, 189, 238, 0.9);
+}
+.card1 > .skilline__content > .btn:hover {
+  background-color: var(--clr-primary-white);
+  border: 1px solid transparent;
+  color: rgba(23, 27, 65, 0.5);
+}
+.card2 > .skilline__content > .btn:hover {
+  background-color: var(--clr-primary-white);
+  border: 1px solid transparent;
+  color: rgba(35, 189, 238, 0.9);
 }
 @media screen and (min-width: 25rem) {
   .hero {
@@ -190,6 +232,19 @@
   .hero__cta {
     flex-direction: row;
     align-items: center;
+  }
+  .skilline__content > h3 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .skilline__content > .btn {
+    padding: 24px 38px 23px 37px;
+    font-size: 22px;
+  }
+  .skilline__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 }
 @media screen and (min-width: 75rem) {
