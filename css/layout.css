@@ -24,6 +24,9 @@ body {
   color: var(--clr-primary-blue);
   text-align: center;
 }
+.heading > span {
+  color: var(--clr-primary-yellow);
+}
 .title {
   font-family: var(--font-primary);
   font-weight: 400;
@@ -48,7 +51,10 @@ body {
   background: var(--clr-primary-white);
   color: var(--clr-primary-yellow);
 }
-header,
-#brands {
+header {
   padding: 1.25rem 0.625rem;
+}
+#brands,
+#service {
+  padding: 3.125rem 0.625rem;
 }

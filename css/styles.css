@@ -79,7 +79,7 @@
   width: 100%;
 }
 
-.brands__title {
+.brand__title {
   font-weight: 500;
   font-size: 28px;
   line-height: 160%;
@@ -94,7 +94,39 @@
   flex-wrap: wrap;
   gap: 1.25rem;
 }
-
+#service {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.cards {
+  display: flex;
+  padding-top: 5rem;
+  row-gap: 4rem;
+  column-gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  position: relative;
+  box-shadow: 0 0.1875rem 0.8135rem #0003;
+  border-radius: 1.25rem;
+  padding: 6rem 1rem 1rem 1rem;
+  max-width: 19rem;
+}
+.card > h3 {
+  font-weight: 500;
+  font-size: 1.875rem;
+}
+.card > p {
+  font-size: 1.25rem;
+}
+.card > img {
+  position: absolute;
+  top: -3.125rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
 @media screen and (min-width: 25rem) {
   .hero {
     max-width: 34.375rem;
@@ -158,5 +190,13 @@
   .hero__cta {
     flex-direction: row;
     align-items: center;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .cards {
+    justify-content: space-around;
+  }
+  .card {
+    max-width: 21rem;
   }
 }
