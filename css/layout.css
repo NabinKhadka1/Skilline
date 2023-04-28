@@ -8,10 +8,12 @@
   --clr-primary-blue: #2f327d;
   --clr-secondary-blue: #252641;
   --clr-tertiary-blue: #113c49;
+  --clr-quarternary-blue: #3465e1;
   --clr-primary-black: #696984;
   --clr-secondary-black: #464646;
   --clr-primary-yellow: #f48c06;
   --clr-primary-white: #fff;
+  --clr-primary-pink: #e13468;
 }
 body {
   font-family: var(--font-primary);
@@ -56,11 +58,29 @@ header {
 }
 #brands,
 #service,
-#skilline {
+#skilline,
+#features {
   padding: 3.125rem 0.625rem;
 }
 .wrapper {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+.btn__present {
+  padding: 0.625rem 2.25rem;
+  color: var(--clr-primary-white);
+  background: var(--clr-quarternary-blue);
+  box-shadow: 0px 0.54rem 1.25rem rgb(52 101 225 / 30%);
+  border-radius: 3.125rem;
+}
+.btn__phone {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.625rem 2.25rem;
+  background: var(--clr-primary-pink);
+  box-shadow: 0px 0.54rem 1.25rem rgb(52 101 225 / 30%);
+  border-radius: 3.125rem;
+  color: var(--clr-primary-white);
 }
