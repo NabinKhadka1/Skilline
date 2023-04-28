@@ -1,0 +1,30 @@
+:root {
+    --font-primary: "Poppins", sans-serif;
+    --font-secondary: "Nunito Sans", sans-serif;
+    --font-sm: 400;
+    --font-md: 500;
+    --font-lg: 600;
+    --font-xl: 700;
+    --clr-primary-blue: #2f327d;
+    --clr-secondary-blue: #252641;
+    --clr-primary-black: #696984;
+    --clr-secondary-black: #464646;
+    --clr-primary-yellow: #f48c06;
+    --clr-primary-white: #fff;
+  }
+  .heading {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 180%;
+    color: var(--clr-primary-blue);
+    text-align: center;
+  }
+  .title {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 180%;
+    text-align: center;
+    color: var(--clr-primary-black);
+  }
