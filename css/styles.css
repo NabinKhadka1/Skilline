@@ -81,7 +81,7 @@
 
 .brand__title {
   font-weight: 500;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 160%;
   letter-spacing: 0.02em;
   color: var(--clr-primary-black);
@@ -133,8 +133,8 @@
 }
 .card1,
 .card2 {
-  max-width: 600px;
-  max-height: 400px;
+  max-width: 37.5rem;
+  max-height: 25rem;
   position: relative;
 }
 .card1 > img,
@@ -180,7 +180,7 @@
 
 .with__skilline--info > a {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 180%;
   text-decoration-line: underline;
   color: var(--clr-primary-black);
@@ -192,12 +192,14 @@
 .feature__wrapper {
   max-width: 30rem;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
 }
 .feature {
   display: flex;
   flex-direction: column-reverse;
   gap: 1.25rem;
-  margin: 3rem 0;
 }
 .feature__info {
   display: flex;
@@ -230,7 +232,7 @@
   gap: 1rem;
 }
 .info > img {
-  width: 27px;
+  width: 1.75rem;
 }
 .info > p {
   line-height: 110%;
@@ -238,7 +240,7 @@
   text-align: left;
 }
 .feature__image--container {
-  max-width: 480px;
+  max-width: 30rem;
 }
 .feature__image--container > img {
   width: 100%;
@@ -266,7 +268,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
-    width: 168px;
+    width: 10.5rem;
   }
   .feature__images--two > img {
     width: 100%;
@@ -289,8 +291,8 @@
   }
   .nav__list > a {
     font-weight: 400;
-    font-size: 22px;
-    line-height: 33px;
+    font-size: 1.375rem;
+    line-height: 2rem;
     letter-spacing: 0.02em;
     color: var(--clr-secondary-blue);
   }
@@ -301,7 +303,7 @@
     color: var(--clr-primary-black);
     padding: 0.5rem 0.75rem;
     background-color: var(--clr-primary-white);
-    box-shadow: 0px 0px 10px rgb(0 0 0 / 7%);
+    box-shadow: 0 0 0.625rem rgb(0 0 0 / 7%);
   }
   a.signup {
     padding: 0.5rem 0.75rem;
@@ -332,8 +334,8 @@
     line-height: 3rem;
   }
   .skilline__content > .btn {
-    padding: 24px 38px 23px 37px;
-    font-size: 22px;
+    padding: 1.5rem 2.375rem 1.375rem 2.375rem;
+    font-size: 1.375rem;
   }
   .skilline__cards {
     display: grid;
@@ -370,7 +372,15 @@
   }
   .feature {
     flex-direction: row-reverse;
+    justify-content: space-around;
     gap: 2rem;
+  }
+  .feature__info {
+    max-width: 37.5rem;
+  }
+  .feature__info > h3,
+  .feature__info > p {
+    text-align: left;
   }
   .info {
     gap: 2rem;
@@ -378,6 +388,9 @@
   .feature__images--one {
     justify-content: flex-start;
     gap: 1.25rem;
+  }
+  .reversed {
+    flex-direction: row;
   }
 }
 @media screen and (min-width: 75rem) {
