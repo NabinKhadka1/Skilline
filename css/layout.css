@@ -62,7 +62,8 @@ header {
 #skilline,
 #features,
 #integrations,
-#testimonials {
+#testimonials,
+#blog {
   padding: 3.125rem 0.625rem;
 }
 .wrapper {
@@ -94,6 +95,22 @@ header {
   padding: 1.5rem 2.375rem 1.375rem 2.375rem;
   font-size: 1rem;
 }
+.btn__news {
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 180%;
+  letter-spacing: 0.02em;
+  color: var(--clr-secondary-blue);
+  padding: 2px 36px;
+  background: #f4c467;
+  border-radius: 80px;
+  width: 130px;
+  border: 1px solid transparent;
+}
+.text-left {
+  text-align: left;
+}
+
 @media screen and (min-width: 48rem) {
   .btn__features {
     font-size: 1.375rem;
