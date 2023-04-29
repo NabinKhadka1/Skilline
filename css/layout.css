@@ -9,6 +9,7 @@
   --clr-secondary-blue: #252641;
   --clr-tertiary-blue: #113c49;
   --clr-quarternary-blue: #3465e1;
+  --clr-primary-purple: #525596;
   --clr-primary-black: #696984;
   --clr-secondary-black: #464646;
   --clr-primary-yellow: #f48c06;
@@ -59,7 +60,9 @@ header {
 #brands,
 #service,
 #skilline,
-#features {
+#features,
+#integrations,
+#testimonials {
   padding: 3.125rem 0.625rem;
 }
 .wrapper {
@@ -86,7 +89,14 @@ header {
 }
 .btn__features {
   display: flex;
+  justify-content: center;
   margin: 4rem auto;
   padding: 1.5rem 2.375rem 1.375rem 2.375rem;
-  font-size: 1.375rem;
+  font-size: 1rem;
+}
+@media screen and (min-width: 48rem) {
+  .btn__features {
+    font-size: 1.375rem;
+    max-width: 18.75rem;
+  }
 }
