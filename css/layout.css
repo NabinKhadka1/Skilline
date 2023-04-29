@@ -26,7 +26,6 @@ body {
   font-size: 2.25rem;
   line-height: 180%;
   color: var(--clr-primary-blue);
-  text-align: center;
 }
 .heading > span {
   color: var(--clr-primary-yellow);
@@ -36,7 +35,6 @@ body {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 180%;
-  text-align: center;
   color: var(--clr-primary-black);
 }
 .container {
